@@ -1,0 +1,142 @@
+boy{background-color: aquamarine;}
+.container{
+    width: 100%;
+    height: 100vh;
+    background: #e3f9ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{background: #3a4452;
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.calculator form input{border: 0;
+outline: 0;
+width: 60px;
+height: 60px;
+border-radius: 10px;
+box-shadow: -8px -8px 15px rgba(255, 255, 255, 0.1),5px 5px 15px rgba(0, 0, 0, 0.2, );
+background: transparent;
+font-size: 20px;
+color: #fff;
+cursor: pointer;
+margin: 10px;
+background-color: aqua;
+cursor: pointer;
+}
+form .display{display: flex;
+    justify-content: flex-end;
+    margin: 20px 0;
+
+}
+form .display input{text-align: right;
+    flex: 1;
+    font-size: 45px;
+    box-shadow: none;
+}
+form input .equal{width: 145px;
+
+}
+form input.operator{color: red;
+background-color: aqua;
+}
+.calculator form input {animation: pulse 2s infinite;}
+@keyframes pulse{
+    0%, 100% {transform: scale(1);}
+    100% {transform : scale(1.2)}
+}
+
+
+
+
+
+body {
+    margin: 0;
+  }
+  
+  .game-canvas {
+    width: 100%;
+    height: 100vw;
+    max-width: 150px;
+    max-height:150px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+   .keys {
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+    width: 100%;
+    padding: 1px;
+    box-sizing: border-box;
+    height: 200px;
+    margin: auto;
+    display: none;
+
+  }
+  
+  .up {
+    position: relative;
+    top: -4px;
+  }
+  
+  .chevron::before {
+    border-style: solid;
+    border-width: 8px 8px 0 0;
+    content: '';
+    display: inline-block;
+    height: 20px;
+    width: 20px;
+    top: -10px;
+    position: relative;
+    transform: rotate(-45deg);
+  }
+  
+  .chevron.down::before {
+    transform: rotate(135deg);
+    top: -22px;
+  }
+  
+  .chevron.right::before {
+    transform: rotate(45deg);
+    top: -18px;
+    left: -5px;
+  }
+  
+  .chevron.left::before {
+    transform: rotate(225deg);
+    top: -18px;
+    left: 5px;
+  }
+  
+  .arr {
+    cursor: pointer;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    line-height: 100px;
+    background: gray;
+    color: white;
+    font-size: 50px;
+    border-right: 10px solid #ccc;
+    border-bottom: 10px solid #ccc;
+    border-left: 10px solid #ddd;
+    border-top: 10px solid #eee;
+    display: inline-block;
+    margin: 5px;
+    transition: all .05s linear;
+    user-select: none;
+  }
+  
+  .arr:active {
+    background: #555;
+  }
+  
+  #game-container {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(220, 220, 220, 0.6);
+  }
+  
