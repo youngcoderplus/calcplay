@@ -33,9 +33,10 @@ I’ll be creating and uploading more projects on my GitHub:
 
 Feel free to check it out for more upcoming projects.
 
-(images/SCREEN.png)
+![GAME1](image.png)
 *The initial screen showing the game buttons
 ---
 
 ### 📝 Written on
 **June 9, 2025**
+
